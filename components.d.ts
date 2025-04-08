@@ -7,9 +7,17 @@ export {}
 
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
-    AccountSys: typeof import('./src/components/AccountSys.vue')['default']
+    AccountList: typeof import('./src/components/AccountList.vue')['default']
+    AccountSys: typeof import('./src/components/test/AccountSys.vue')['default']
+    Button: typeof import('./src/components/Button.vue')['default']
+    VanButto: typeof import('vant/es')['Butto']
     VanButton: typeof import('vant/es')['Button']
-    VanDivider: typeof import('vant/es')['Divider']
-    Web3Api: typeof import('./src/components/Web3Api.vue')['default']
+    VanCell: typeof import('vant/es')['Cell']
+    VanCellGroup: typeof import('vant/es')['CellGroup']
+    VanDialog: typeof import('vant/es')['Dialog']
+    VanField: typeof import('vant/es')['Field']
+    VanIcon: typeof import('vant/es')['Icon']
+    VanSpace: typeof import('vant/es')['Space']
+    Web3Api: typeof import('./src/components/test/Web3Api.vue')['default']
   }
 }

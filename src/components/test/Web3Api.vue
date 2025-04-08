@@ -56,6 +56,7 @@ const send = async () => {
         value,
         data: "0x0000",
     }
+    console.log("rawTx=", rawTx)
     //生成serialize交易对象
     //1.私钥转换
     const privateKey = new Buffer(account.value.privateKey.slice(2), 'hex')
